@@ -4,28 +4,18 @@ body {
     margin-left: auto;
 }
 
-/* DEBUT MAIN */
 main {
     display: grid;
     grid-template-columns: repeat(8, 145px);
     grid-template-rows: 2;
 }
 
-#left_aside {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 1;
-    background-color: #782221;
-    padding-right: 50px;
+h3 {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: left;
+    flex-direction: row;
+    justify-content:start;
+    background-color: #dbc2a4;
+    padding-left: 20px;
+    height: 30px;
+    align-items: center;
 }
-
-#right_aside {
-    grid-column: 3 / span 6;
-    grid-row: 2 / span 1;
-    padding-left: 40px;
-    padding-right: 20px;
-}
-/* FIN MAIN */
