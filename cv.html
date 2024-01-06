@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <header id="me">
-        <figure id="profile">
-            <img id="profile_picture" src="./assets/images/photo-profil-11.jpg" alt="Photo de profil">
+    <header class="profile">
+        <figure class="profile__list">
+            <img class="profile__picture" src="./assets/images/photo-profil.jpg" alt="Photo de profil">
         </figure>
-        <h1>Julien LE CHOPIER</h1>
-        <h2>Développeur web junior</h2>
+        <h1 class="profile__item">Julien LE CHOPIER</h1>
+        <h2 class="profile__item">Développeur web junior</h2>
     </header>
 
     <main>
@@ -39,10 +39,10 @@
             <section>
                 <h3>A propos</h3>
                 <p id="about">Récemment diplômé du Centre Européen de Formation, et étant d'un bon esprit d'équipe, 
-                   je souhaite intégrer votre entreprise dans laquelle j'aurai la possibilité d'exprimer 
-                   mon potentiel, mon autonomie et ma créativité. <br>
-                   La démarche écologique que vous prônez, associée aux nouvelles technologies 
-                   correspondent à l'orientation que je souhaite donner à ma carrière professionnelle.</p>
+                je souhaite intégrer votre entreprise dans laquelle j'aurai la possibilité d'exprimer 
+                mon potentiel, mon autonomie et ma créativité. <br>
+                La démarche écologique que vous prônez, associée aux nouvelles technologies 
+                correspondent à l'orientation que je souhaite donner à ma carrière professionnelle.</p>
             </section>
             <section>
                 <h3>Langues parlées</h3>
@@ -65,74 +65,105 @@
         </div>
 
         <div id="right_side">
-            <section>
-                <h3>Expériences professionnelles</h3>
-                <!-- Profession 4 -->
-                <p>Livreur chez Pharmacie de la Porte du Pin / Porte du Pin Médical - Agen</p>
-                <p>Depuis le <time datetime="2018-07-16"></time>16 juillet 2018 à Aujourd'hui</p>
-                <ul>
-                    <li>Livraison de médicaments auprès de particuliers, EHPADS, etc...</li>
-                    <li>Livraison et installation de matériel médical auprès de particuliers, EHPADS, etc...</li>
-                </ul>
-                <!-- Profession 3 -->
-                <p>Préparation au concours BPJEPS AGFF</p>
-                <p>De <time datetime="2015-09">Septembre 2015 </time>à <time datetime="2018-04"></time>Avril 2018</p>
-                <ul>
-                    <li>Préparation (force, endurance, cours collectifs) au concours d'entrée du CREPS - Toulouse</li>
-                </ul>
-                <!-- Profession 2 -->
-                <p>Equipier polyvalent chez McDonald's - Boé</p>
-                <p>Du <time datetime="2013-04-27">27 Avril 2013 </time>au <time datetime="2015-06-30">30 Juin 2015</time></p>
-                <ul>
-                    <li>Prise de commande et encaissement en salle et au Drive</li>
-                    <li>Préparation de commande</li>
-                    <li>Entretient du lobby (salle, terrasse, sanitaires)</li>
-                    <li>"Open" : mise en place pour le service, nettoyage du lobby, nettoyage de la cuisine</li>
-                    <li>"Close" : plonge, nettoyage du comptoir, nettoyage du lobby, nettoyage de la cuisine, <br>
-                    nettoyage des vestiaires et de la salle de repos des employés</li>
-                </ul>
-                <!-- Profession 1 -->
-                <p>Castration de maïs chez Exploitation Carnejac - Saint Sylvestre sur Lot</p>
-                <p>De <time datetime="2011-07">Juillet 2011 </time>à <time datetime="2011-08">Août 2011</time></p>
-                <p>De <time datetime="2010-07">Juillet 2010 </time>à <time datetime="2010-08">Août 2010</time></p>
-                <ul>
-                    <li>Castration de maïs</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Diplômes / Formations</h3>
-                <!-- Formation 2 -->
-                <p>Formation développeur web</p>
-                <p>De <time datetime="2023-10">Octobre 2023 à Aujourd'hui</time></p>
-                <p>Centre Européen de Formation</p>
-                <!-- Formation 1 -->
-                <p>Etudes supérieures en faculté de droit</p>
-                <p>De <time datetime="2011-09">Septembre 2011 </time>à <time datetime="2013-03">Mars 2013</time></p>
-                <p>Université Bordeaux IV - Agen</p>
-                <!-- Diplôme 1 -->
-                <p>Baccalauréat ES</p>
-                <p>De <time datetime="2007">2007 </time>à <time datetime="2010">2010</time></p>
-                <p>Lycée Sainte Catherine - Villeneuve sur Lot</p>
-            </section>
-            <section>
-                <h3>Compétences</h3>
-                <ul>
-                    <li>HTML 5 - Débutant</li>
-                    <li>CSS 3 - Débutant</li>
-                    <li>GitHub - Débutant</li>
-                </ul>
-            </section>
+            <div class="professional">
+                <section class="professional__list">
+                    <h3 class="professional__item">Expériences professionnelles</h3>
+
+                    <!-- Profession 4 -->
+                    <article>
+                        <p class="professional__job">Livreur chez Pharmacie de la Porte du Pin / Porte du Pin Médical - Agen</p>
+                        <p>Depuis le <time datetime="2018-07-16"></time>16 juillet 2018 à Aujourd'hui</p>
+                        <ul>
+                            <li>Livraison de médicaments auprès de particuliers, EHPADS, etc...</li>
+                            <li>Livraison et installation de matériel médical auprès de particuliers, EHPADS, etc...</li>
+                        </ul>
+                    </article>
+
+                    <!-- Profession 3 -->
+                    <article>
+                        <p class="professional__job">Préparation au concours BPJEPS AGFF</p>
+                        <p>De <time datetime="2015-09">Septembre 2015 </time>à <time datetime="2018-04"></time>Avril 2018</p>
+                        <ul>
+                            <li>Préparation (force, endurance, cours collectifs) au concours d'entrée du CREPS - Toulouse</li>
+                        </ul>
+                    </article>
+
+                    <!-- Profession 2 -->
+                    <article>
+                        <p class="professional__job">Equipier polyvalent chez McDonald's - Boé</p>
+                        <p>Du <time datetime="2013-04-27">27 Avril 2013 </time>au <time datetime="2015-06-30">30 Juin 2015</time></p>
+                        <ul>
+                            <li>Prise de commande et encaissement en salle et au Drive</li>
+                            <li>Préparation de commande</li>
+                            <li>Entretient du lobby (salle, terrasse, sanitaires)</li>
+                            <li>"Open" : mise en place pour le service, nettoyage du lobby, nettoyage de la cuisine</li>
+                            <li>"Close" : plonge, nettoyage du comptoir, nettoyage du lobby, nettoyage de la cuisine, <br>
+                            nettoyage des vestiaires et de la salle de repos des employés</li>
+                        </ul>
+                    </article>
+
+                    <!-- Profession 1 -->
+                    <article>
+                        <p class="professional__job">Castration de maïs chez Exploitation Carnejac - Saint Sylvestre sur Lot</p>
+                        <p>De <time datetime="2011-07">Juillet 2011 </time>à <time datetime="2011-08">Août 2011</time></p>
+                        <p>De <time datetime="2010-07">Juillet 2010 </time>à <time datetime="2010-08">Août 2010</time></p>
+                        <ul>
+                            <li>Castration de maïs</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="professional__list">
+                    <h3 class="professional__item">Diplômes / Formations</h3>
+
+                    <!-- Etudes 3 -->
+                    <article>
+                        <p class="professional__job">Formation développeur web</p>
+                        <p>De <time datetime="2023-10">Octobre 2023 à Aujourd'hui</time></p>
+                        <p>Centre Européen de Formation</p>
+                    </article>
+
+                    <!-- Etudes 2 -->
+                    <article>
+                        <p class="professional__job">Etudes supérieures en faculté de droit</p>
+                        <p>De <time datetime="2011-09">Septembre 2011 </time>à <time datetime="2013-03">Mars 2013</time></p>
+                        <p>Université Bordeaux IV - Agen</p>
+                    </article>
+
+                    <!-- Etudes 1 -->
+                    <article>
+                        <p class="professional__job">Baccalauréat ES</p>
+                        <p>De <time datetime="2007">2007 </time>à <time datetime="2010">2010</time></p>
+                        <p>Lycée Sainte Catherine - Villeneuve sur Lot</p>
+                    </article>
+                </section>
+
+                <section class="professional__list">
+                    <h3 class="professional__item">Compétences</h3>
+                    <article>
+                        <ul>
+                            <li>HTML <sub>5</sub> - Débutant</li>
+                            <li>CSS <sub>3</sub> - Débutant</li>
+                            <li>GitHub - Débutant</li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div id="social">
-        <figure id="linkedin">
-            <img id="linkedin_picture" src="./assets/images/image-linkedin.png" alt="Profil linkedin">
-        </figure>
-        <figure id="github">
-            <img id="github_picture" src="./assets/images/image-github.png" alt="Profil github">
-        </figure>
+        <div class="social">
+            <figure class="social__list">
+                <a href="https://www.linkedin.com/in/julien-le-chopier-a91a032a8/" target="_blank">
+                    <img class="social__item" src="./assets/images/image-linkedin.png" alt="Profil linkedin">
+                </a>
+            </figure>
+            <figure class="social__list">
+                <a href="https://github.com/julien-le-chopier" target="_blank">
+                    <img class="social__item" src="./assets/images/image-github.png" alt="Profil github">
+                </a>
+            </figure>
         </div>
         <p id="bottom">Dernière mise à jour le <time datetime="2024-01-06">6 janvier 2024.</time></p>
     </footer>
