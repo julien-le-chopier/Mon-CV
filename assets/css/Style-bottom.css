@@ -15,31 +15,24 @@ footer{
 }
 
 /* DEBUT RESEAUX SOCIAUX */
-#social {
+.social {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-#linkedin {
+.social__list {
     width: 75px;
     height: 75px;
 }
 
-#linkedin_picture {
+.social__item {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#github {
-    width: 75px;
-    height: 75px;
-}
-
-#github_picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.social__item:hover {
+    opacity: 0.8;
 }
 /* FIN RESEAUX SOCIAUX */
