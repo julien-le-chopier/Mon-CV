@@ -13,7 +13,7 @@ header {
     color: white;
 }
 
-figure {
+#profile {
     width: 150px;
     height: 150px;
     display: flex;
@@ -22,11 +22,12 @@ figure {
     align-self: center;
 }
 
-img {
+#profile_picture {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 0 15px #ffffff;
 }
 /* FIN HEADER */
 

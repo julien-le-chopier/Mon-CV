@@ -1,5 +1,5 @@
 footer{
-    height: 100px;
+    height: 200px;
     background-color: #782221;
     display: flex;
     flex-direction: column;
@@ -13,3 +13,33 @@ footer{
     justify-content: center;
     color: white;
 }
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#social-1 {
+    width: 75px;
+    height: 75px;
+}
+
+/* DEBUT RESEAUX SOCIAUX */
+#linkedin_picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#social-2 {
+    width: 75px;
+    height: 75px;
+}
+
+#github_picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* FIN RESEAUX SOCIAUX */
