@@ -1,0 +1,23 @@
+#left_aside {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    background-color: #782221;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    color: white; 
+    padding-left: 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+#left_aside li {
+    color: white;
+}
