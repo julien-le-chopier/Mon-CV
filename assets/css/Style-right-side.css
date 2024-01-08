@@ -6,15 +6,17 @@
     border-right: 3px solid #2c1d27;
 }
 
-.professional__item {
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.professional__bloc {
     border-left: 8px solid #782221;
     text-indent: -15px;
 }
 
-.professional__job {
-    font-weight: bold;
-}
-
-.professional__bloc:hover {
+.professional__item:hover {
     border-right: 5px solid #782221;
 }
