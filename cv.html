@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créez votre CV en HTML et CSS</title>
+    <meta name="description" content="Devoir de Parcours / Niveau 1 : Newie Développeur / La programmation Web / Créez votre CV en HTML et CSS. Devoir réalisé selon certains critères attendus">
     <link rel="stylesheet" href="./assets/css/Style-basic.css">
     <link rel="stylesheet" href="./assets/css/Style-top.css">
     <link rel="stylesheet" href="./assets/css/Style-left-side.css">
     <link rel="stylesheet" href="./assets/css/Style-right-side.css">
     <link rel="stylesheet" href="./assets/css/Style-bottom.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 </head>
 
 <body>
     <header class="profile">
         <figure class="profile__list">
-            <img class="profile__picture" src="./assets/images/photo-profil.jpg" alt="Photo de profil">
+            <a href="./assets/images/photo-profil.jpg">
+                <img class="profile__picture" src="./assets/images/photo-profil.jpg" alt="Photo de profil">
+            </a>
         </figure>
         <h1 class="profile__item">Julien LE CHOPIER</h1>
         <h2 class="profile__item">Développeur web junior</h2>
@@ -67,11 +71,11 @@
         <div id="right_side">
             <div class="professional">
                 <section class="professional__list">
-                    <h3 class="professional__item">Expériences professionnelles</h3>
+                    <h3 class="professional__bloc">Expériences professionnelles</h3>
 
                     <!-- Profession 4 -->
-                        <div class="professional__bloc">
-                            <p class="professional__job">Livreur chez Pharmacie de la Porte du Pin / Porte du Pin Médical - Agen</p>
+                        <div class="professional__item">
+                            <h4>Livreur chez Pharmacie de la Porte du Pin / Porte du Pin Médical - Agen</h4>
                             <p>Depuis le <time datetime="2018-07-16"></time>16 juillet 2018 à Aujourd'hui</p>
                                 <ul>
                                     <li>Livraison de médicaments auprès de particuliers, EHPADS, etc...</li>
@@ -80,8 +84,8 @@
                         </div>
 
                     <!-- Profession 3 -->
-                        <div class="professional__bloc">
-                            <p class="professional__job">Préparation au concours BPJEPS AGFF</p>
+                        <div class="professional__item">
+                            <h4>Préparation au concours BPJEPS AGFF</h4>
                             <p>De <time datetime="2015-09">Septembre 2015 </time>à <time datetime="2018-04"></time>Avril 2018</p>
                                 <ul>
                                     <li>Préparation (force, endurance, cours collectifs) au concours d'entrée du CREPS - Toulouse</li>
@@ -89,8 +93,8 @@
                         </div>
 
                     <!-- Profession 2 -->
-                        <div class="professional__bloc">
-                            <p class="professional__job">Equipier polyvalent chez McDonald's - Boé</p>
+                        <div class="professional__item">
+                            <h4>Equipier polyvalent chez McDonald's - Boé</h4>
                             <p>Du <time datetime="2013-04-27">27 Avril 2013 </time>au <time datetime="2015-06-30">30 Juin 2015</time></p>
                                 <ul>
                                     <li>Prise de commande et encaissement en salle et au Drive</li>
@@ -103,8 +107,8 @@
                         </div>
 
                     <!-- Profession 1 -->
-                        <div class="professional__bloc">
-                            <p class="professional__job">Castration de maïs chez Exploitation Carnejac - Saint Sylvestre sur Lot</p>
+                        <div class="professional__item">
+                            <h4>Castration de maïs chez Exploitation Carnejac - Saint Sylvestre sur Lot</h4>
                             <p>De <time datetime="2011-07">Juillet 2011 </time>à <time datetime="2011-08">Août 2011</time></p>
                             <p>De <time datetime="2010-07">Juillet 2010 </time>à <time datetime="2010-08">Août 2010</time></p>
                                 <ul>
@@ -114,32 +118,32 @@
                 </section>
 
                 <section class="professional__list">
-                    <h3 class="professional__item">Diplômes / Formations</h3>
+                    <h3 class="professional__bloc">Diplômes / Formations</h3>
                     <!-- Etudes 3 -->
-                        <div class="professional__bloc">
-                            <p class="professional__job">Formation développeur web</p>
+                        <div class="professional__item">
+                            <h4>Formation développeur web</h4>
                             <p>De <time datetime="2023-10">Octobre 2023 à Aujourd'hui</time></p>
                             <p>Centre Européen de Formation</p>
                         </div>
 
                     <!-- Etudes 2 -->
-                        <div class="professional__bloc">
-                            <p class="professional__job">Etudes supérieures en faculté de droit</p>
+                        <div class="professional__item">
+                            <h4>Etudes supérieures en faculté de droit</h4>
                             <p>De <time datetime="2011-09">Septembre 2011 </time>à <time datetime="2013-03">Mars 2013</time></p>
                             <p>Université Bordeaux IV - Agen</p>
                         </div>
 
                     <!-- Etudes 1 -->
-                        <div class="professional__bloc">
-                            <p class="professional__job">Baccalauréat ES</p>
+                        <div class="professional__item">
+                            <h4>Baccalauréat ES</h4>
                             <p>De <time datetime="2007">2007 </time>à <time datetime="2010">2010</time></p>
                             <p>Lycée Sainte Catherine - Villeneuve sur Lot</p>
                         </div>
                 </section>
 
                 <section class="professional__list">
-                    <h3 class="professional__item">Compétences</h3>
-                        <div class="professional__bloc">
+                    <h3 class="professional__bloc">Compétences</h3>
+                        <div class="professional__item">
                             <ul>
                                 <li>HTML <sub>5</sub> - Débutant</li>
                                 <li>CSS <sub>3</sub> - Débutant</li>
@@ -164,7 +168,7 @@
                 </a>
             </figure>
         </div>
-        <p id="bottom">Dernière mise à jour le <time datetime="2024-01-06">6 janvier 2024.</time></p>
+        <small id="bottom">Dernière mise à jour le <time datetime="2024-01-06">6 janvier 2024.</time></small>
     </footer>
 </body>
 
